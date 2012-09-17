@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><cal><users><user><name> Raghava Rao Mukkamala </name><password>lab</password></user><user><name> Thomas Hildebrandt</name><password>teach</password></user><user><name> Teaching Assistant No:1 </name><password>help</password></user><user><name> Student No:1 </name><password>study</password></user></users><tasks><task id="tch-01" name="teach lect 01" date="03-09-2012" status="not-executed"><description>
+                Teaching on  Distributed Systems and System Model 
+            </description><attendant></attendant></task><task id="lab-01" name="lab exercises 01" date="03-09-2012" status="not-executed"><description>
+                Lab exercises for 1st week. 
+            </description><attendant></attendant></task><task id="tch-03" name="teach lect 03" date="17-09-2012" status="not-executed"><description>
+                Teach RMI and Web services. 
+            </description><attendant></attendant></task><task id="assn-01" name="mandatory assignment 01" date="17-09-2012" status="not-executed"><description>
+                Work out mandatory assignment and submit 
+            </description><attendant></attendant></task><task id="assn-01-approve" name="approve mandatory assignment 01" date="08-10-2012" status="not-executed"><description>
+                Check mandatory assignment and approve. 
+            </description><attendant></attendant></task><task id="test-test-test" name="work dammit" date="99-99-9999" status="executed"><description>
+                Random task testing.
+            </description><attendant></attendant></task></tasks></cal>

@@ -36,7 +36,7 @@ public class TcpServer {
             
             DataOutputStream outputStream = new DataOutputStream(socket.getOutputStream());
             
-            outputStream.writeUTF("Hello Client");
+            outputStream.writeUTF("Ready");
             
             outputStream.flush();
             

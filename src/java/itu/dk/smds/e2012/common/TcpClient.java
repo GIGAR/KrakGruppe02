@@ -22,21 +22,13 @@ public class TcpClient {
             InetAddress serverAddress = InetAddress.getByName("localhost");
             int serverPort = 7896;
             
-            String message = "Hello Server!";
-            
             Socket socket = new Socket(serverAddress, serverPort);
             
-            DataOutputStream dos = new DataOutputStream(socket.getOutputStream());
+            boolean serverState = checkServer(socket);
+            if (serverState == false) 
+                { throw new IOException("No server response"); }
             
-            dos.writeUTF(message);
-            
-            dos.flush();
-            
-            DataInputStream dis = new DataInputStream(socket.getInputStream());
-            
-            String response = dis.readUTF();
-            
-            System.out.println("Message from Server: " + response);
+            // Insert responses here --
             
             socket.close();
             
@@ -45,6 +37,24 @@ public class TcpClient {
             
             System.out.println("error message: " + e.getMessage());
         }
+    }
+    
+    private static boolean checkServer(Socket socket) throws IOException {
+        DataOutputStream dos = new DataOutputStream(socket.getOutputStream());
+        
+        String message = "Hello Server!";
+        
+        dos.writeUTF(message);
+        dos.flush();
+        
+        DataInputStream dis = new DataInputStream(socket.getInputStream());
+        
+        String response = dis.readUTF();
+        
+        System.out.println("Message from Server: " + response);
+        
+        if (response.equals("Ready")) { return true; }
+        else { return false; }
     }
 
 }

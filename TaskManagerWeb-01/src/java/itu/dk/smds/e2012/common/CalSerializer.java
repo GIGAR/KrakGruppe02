@@ -49,7 +49,7 @@ public class CalSerializer {
                 PrintUserObject(listIterator.next());
 
             }
-            
+            //same as above
             ListIterator<Task> listIterator2 = cal.tasks.listIterator();
             while (listIterator2.hasNext()) {
 

@@ -7,12 +7,13 @@ import java.util.List;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
+import java.io.Serializable;
 /**
  *
  * @author GIGAR
  */
 @XmlRootElement(name = "cal")
-public class Cal {
+public class Cal implements Serializable{
     @XmlElementWrapper(name = "users")
     @XmlElement(name = "user")
     public List<User> users;

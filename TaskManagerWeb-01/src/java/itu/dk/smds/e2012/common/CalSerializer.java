@@ -1,13 +1,4 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package itu.dk.smds.e2012.common;
-
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 import java.io.*;
 import java.util.ListIterator;
 import java.util.logging.Level;
@@ -171,8 +162,5 @@ public class CalSerializer {
         output.write(xml);
 
         output.close();
-
-
-
     }
 }
